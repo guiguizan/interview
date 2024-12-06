@@ -1,0 +1,7 @@
+<h1 class="title">{{title}}</h1>
+
+<div class="cards">
+    <div class="cards" *ngFor="let card of cardsList | keyvalue">
+        <app-card [infoCard]="card"></app-card>
+    </div>
+</div>
